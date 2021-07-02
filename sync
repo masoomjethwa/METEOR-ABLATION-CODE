@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='utf-8'?>
+<VOTABLE version="1.3" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://vo.ari.uni-heidelberg.de/docs/schemata/VOTable-1.3.xsd"><DESCRIPTION> The ephemeris were produced by simulating the ejection of meteoroids
+from the sunlit hemisphere of cometary nuclei, typically from 0 to 3
+au, followed by the propagation of orbits of meteoroids in the Solar
+System, taking into account the gravitation of the Sun, the 8 planets,
+Pluto, and the Moon, as well as the radiation pressure and the
+Poynting-Robertson drag. Note that asteroid parent bodies were
+considered as active (i.e. comet-like bodies) even if they are not
+active today. The showers are predicted when a planet enters a large
+enough set of meteoroids, at a distance less than typically 0.01 au.
+See Vaubaillon J., Colas F., Jorda L. 2005 A new method to predict
+meteor showers. I. Description of the model, Astronomy and
+Astrophysics, Volume 439/2 p.751-760, as well as: Vaubaillon J. 2017 A
+confidence index for forecasting of meteor showers, Planetary and
+Space Science, Volume 143 p.78-82</DESCRIPTION><INFO name="legal" value=" Reference:"></INFO><RESOURCE type="results"><INFO name="SERVICE_PROTOCOL" value="2.0">EPN-TAP</INFO><INFO name="server" value="http://voparis-tap-voevent.obspm.fr:80"></INFO><INFO name="query" value="SELECT meteor_showers.epn_core.granule_uid, meteor_showers.epn_core.granule_gid, meteor_showers.epn_core.obs_id, meteor_showers.epn_core.dataproduct_type, meteor_showers.epn_core.target_name, meteor_showers.epn_core.target_class, meteor_showers.epn_core.time_min, meteor_showers.epn_core.time_max, meteor_showers.epn_core.time_sampling_step_min, meteor_showers.epn_core.time_sampling_step_max, meteor_showers.epn_core.time_exp_min, meteor_showers.epn_core.time_exp_max, meteor_showers.epn_core.spectral_range_min, meteor_showers.epn_core.spectral_range_max, meteor_showers.epn_core.spectral_sampling_step_min, meteor_showers.epn_core.spectral_sampling_step_max, meteor_showers.epn_core.spectral_resolution_min, meteor_showers.epn_core.spectral_resolution_max, meteor_showers.epn_core.c1min, meteor_showers.epn_core.c1max, meteor_showers.epn_core.c2min, meteor_showers.epn_core.c2max, meteor_showers.epn_core.c3min, meteor_showers.epn_core.c3max, meteor_showers.epn_core.s_region, meteor_showers.epn_core.c1_resol_min, meteor_showers.epn_core.c1_resol_max, meteor_showers.epn_core.c2_resol_min, meteor_showers.epn_core.c2_resol_max, meteor_showers.epn_core.c3_resol_min, meteor_showers.epn_core.c3_resol_max, meteor_showers.epn_core.spatial_frame_type, meteor_showers.epn_core.incidence_min, meteor_showers.epn_core.incidence_max, meteor_showers.epn_core.emergence_min, meteor_showers.epn_core.emergence_max, meteor_showers.epn_core.phase_min, meteor_showers.epn_core.phase_max, meteor_showers.epn_core.instrument_host_name, meteor_showers.epn_core.instrument_name, meteor_showers.epn_core.measurement_type, meteor_showers.epn_core.processing_level, meteor_showers.epn_core.creation_date, meteor_showers.epn_core.modification_date, meteor_showers.epn_core.release_date, meteor_showers.epn_core.service_title, meteor_showers.epn_core.access_url, meteor_showers.epn_core.access_format, meteor_showers.epn_core.access_estsize, meteor_showers.epn_core.access_md5, meteor_showers.epn_core.time_scale, meteor_showers.epn_core.publisher, meteor_showers.epn_core.bib_reference, meteor_showers.epn_core.target_region, meteor_showers.epn_core.event_status, meteor_showers.epn_core.event_type, meteor_showers.epn_core.showers, meteor_showers.epn_core.showercode, meteor_showers.epn_core.event_origin_target, meteor_showers.epn_core.date_of_max, meteor_showers.epn_core.begin_trail, meteor_showers.epn_core.end_trail, meteor_showers.epn_core.dist0, meteor_showers.epn_core.solar_longitude_min, meteor_showers.epn_core.solar_longitude_max, meteor_showers.epn_core.showers_year, meteor_showers.epn_core.vgeo, meteor_showers.epn_core.s_v, meteor_showers.epn_core.zhr, meteor_showers.epn_core.conf_id FROM meteor_showers.epn_core WHERE ( lower(LOWER('Mars')) = ANY(string_to_array(LOWER(&quot;target_name&quot;), '#')) OR lower(LOWER('4')) = ANY(string_to_array(LOWER(&quot;target_name&quot;), '#')) OR lower(LOWER('499')) = ANY(string_to_array(LOWER(&quot;target_name&quot;), '#')) ) AND ( &quot;target_class&quot; LIKE '%%planet%%' ) LIMIT 20000000"></INFO><INFO name="src_res" value="Contains traces from resource meteor_showers/q"> The ephemeris were produced by simulating the ejection of meteoroids
+from the sunlit hemisphere of cometary nuclei, typically from 0 to 3
+au, followed by the propagation of orbits of meteoroids in the Solar
+System, taking into account the gravitation of the Sun, the 8 planets,
+Pluto, and the Moon, as well as the radiation pressure and the
+Poynting-Robertson drag. Note that asteroid parent bodies were
+considered as active (i.e. comet-like bodies) even if they are not
+active today. The showers are predicted when a planet enters a large
+enough set of meteoroids, at a distance less than typically 0.01 au.
+See Vaubaillon J., Colas F., Jorda L. 2005 A new method to predict
+meteor showers. I. Description of the model, Astronomy and
+Astrophysics, Volume 439/2 p.751-760, as well as: Vaubaillon J. 2017 A
+confidence index for forecasting of meteor showers, Planetary and
+Space Science, Volume 143 p.78-82</INFO><INFO name="copyright" value="meteor_showers/q copyright or license"> Reference:</INFO><INFO name="src_table" value="Contains traces from table meteor_showers.epn_core"></INFO><INFO name="QUERY_STATUS" value="OK">Query successful</INFO><INFO name="citation" ucd="meta.bib" value="TBD">This resource contains data associated with the publication TBD.</INFO><INFO name="citation" ucd="meta.bib" value="http://voparis-tap-voevent.obspm.fr:80/tableinfo/meteor_showers.epn_core">For advice on how to cite the resource(s) that contributed to this result, see http://voparis-tap-voevent.obspm.fr:80/tableinfo/meteor_showers.epn_core</INFO><TABLE name="epn_core" utype="ivo://vopdc.obspm/std/epncore#schema-2.0"><GROUP ID="ndmwobpahmsa" name="note-et_prod"><DESCRIPTION>
+The following values are defined for this field:
+
+im -- image
+	associated scalar fields with two spatial axes, e.g., images with
+	multiple color planes like from multichannel or filter cameras. 
+	Preview images (e.g. map with axis and caption) also belong here. 
+	Conversely, all vectorial 2D fields are described as catalogue 
+	(see below).
+ma -- map
+	scalar field/rasters with two spatial axes covering a large 
+	area and projected either on the sky or on a planetary body, 
+	associated to a Projection parameter (with a short enumerated 
+	list of possible values).  This is mostly intended to identify 
+	complete coverages that can be used as reference basemaps
+sp-- spectrum
+	measurements organized primarily along a spectral axis, e.g., 
+	radiance spectra. This includes spectral aggregates (series 
+	of related spectra with non-connected spectral ranges, e.g., 
+	from several channels of the same instrument 
+ds -- dynamic_spectrum
+	consecutive spectral measurements through time, organized 
+	as a time series. This typically implies successive spectra of 
+	the same target or field of view.
+sc -- spectral_cube
+	sets of spectral measurements with 1 or 2 D spatial coverage, e.g.,
+	imaging spectroscopy. The choice between Image and spectral_cube is
+	related to the characteristics of the instrument (which dimension 
+	is most resolved and which dimensions are acquired simultaneously). 
+	The choice between dynamic_spectrum and spectral_cube is related 
+	to the uniformity of the field of view.
+pr -- profile
+	scalar or vectorial measurements along 1 spatial dimension, e.g.,
+	atmospheric profiles, atmospheric paths, sub-surface profiles…
+vo -- volume
+	other measurements with 3 spatial dimensions, e.g., internal or
+	atmospheric structures, including shells/shape models (3D surfaces).
+mo -- movie
+	sets of chronological 2 D spatial measurements.
+cu -- cube
+	multidimensional data with 3 or more axes, e.g., all that is not
+	described by other 3 D data types such as spectral cubes or volume.
+	This is mostly intended to accommodate unusual data with multiple 
+	dimensions.
+ts -- time_series
+	measurements organized primarily as a function of time (with 
+	exception of dynamical spectra and movies, i.e. usually a scalar 
+	quantity). Typical examples of time series include space-borne 
+	dust detector measurements, daily or seasonal curves measured at 
+	a given location (e.g., a lander), and light curves.
+ca -- catalog 
+	applies to a single granule providing a list of events, a catalog 
+	of object parameters, a list of features… Spatial vectors 
+	(e.g., vector information from a GIS, spatial footprints…) belong 
+	here. This is relevant, e. g., for collections of vectorial elements 
+	(e.g., crater lists or ROI definitions) which can be handled directly 
+	in a specialized environment such as a GIS. This includes maps of 
+	vectors, e.g., wind maps.
+ci -- catalogue_item
+	applies when the service itself provides a catalogue, with entries 
+	described as individual granules. The service can be, e.g., a list
+	of asteroid properties or spectral lines. Catalogue_item can be 
+	limited to scalar quantities (including strings), and possibly to 
+	a single element. This organization allows the user to search inside 
+	the catalogue from the TAP query interface.</DESCRIPTION><FIELDref ref="dataproduct_type"/></GROUP><GROUP ID="ndmwobpahmea" name="note-et_cal"><DESCRIPTION>
+CODMAC levels are:
+
+1 -- raw
+
+2 -- edited
+
+3 -- calibrated
+
+4 -- resampled
+
+5 -- derived
+
+6 -- ancillary</DESCRIPTION><FIELDref ref="processing_level"/></GROUP><FIELD ID="granule_uid" arraysize="*" datatype="char" name="granule_uid" ucd="meta.id"><DESCRIPTION>Internal table row index Unique ID in data service, also in v2. Can be alphanumeric.</DESCRIPTION></FIELD><FIELD ID="granule_gid" arraysize="*" datatype="char" name="granule_gid" ucd="meta.id"><DESCRIPTION>Common to granules of same type (e.g. same map projection, or geometry data products). Can be alphanumeric.</DESCRIPTION></FIELD><FIELD ID="obs_id" arraysize="*" datatype="char" name="obs_id" ucd="meta.id"><DESCRIPTION>Associates granules derived from the same data (e.g. various representations/processing levels). Can be alphanumeric, may be the ID of original observation.</DESCRIPTION></FIELD><FIELD ID="dataproduct_type" arraysize="*" datatype="char" name="dataproduct_type" ucd="meta.code.class" utype="Epn.dataProductType"><DESCRIPTION>The high-level organization of the data product, from enumerated list (e.g., 'im' for image, sp for spectrum)</DESCRIPTION><VALUES><OPTION name="im" value="im"/><OPTION name="ma" value="ma"/><OPTION name="sp" value="sp"/><OPTION name="ds" value="ds"/><OPTION name="sc" value="sc"/><OPTION name="pr" value="pr"/><OPTION name="vo" value="vo"/><OPTION name="mo" value="mo"/><OPTION name="cu" value="cu"/><OPTION name="ts" value="ts"/><OPTION name="ca" value="ca"/><OPTION name="ci" value="ci"/></VALUES></FIELD><FIELD ID="target_name" arraysize="*" datatype="char" name="target_name" ucd="meta.id;src" utype="Epn.TargetName"><DESCRIPTION>Standard IAU name of target (from a list related to target class), case sensitive</DESCRIPTION></FIELD><FIELD ID="target_class" arraysize="*" datatype="char" name="target_class" ucd="meta.code.class;src" utype="Epn.TargetClass"><DESCRIPTION>Type of target, from enumerated list</DESCRIPTION><VALUES><OPTION name="asteroid" value="asteroid"/><OPTION name="dwarf_planet" value="dwarf_planet"/><OPTION name="planet" value="planet"/><OPTION name="satellite" value="satellite"/><OPTION name="comet" value="comet"/><OPTION name="exoplanet" value="exoplanet"/><OPTION name="interplanetary_medium" value="interplanetary_medium"/><OPTION name="ring" value="ring"/><OPTION name="sample" value="sample"/><OPTION name="sky" value="sky"/><OPTION name="spacecraft" value="spacecraft"/><OPTION name="spacejunk" value="spacejunk"/><OPTION name="star" value="star"/></VALUES></FIELD><FIELD ID="time_min" datatype="double" name="time_min" ucd="time.start" unit="d"><DESCRIPTION>Acquisition start time (in JD)</DESCRIPTION></FIELD><FIELD ID="time_max" datatype="double" name="time_max" ucd="time.end" unit="d"><DESCRIPTION>Acquisition stop time (in JD)</DESCRIPTION></FIELD><FIELD ID="time_sampling_step_min" datatype="double" name="time_sampling_step_min" ucd="time.interval;stat.min" unit="s" utype="Epn.Time.Time_sampling_step_min"><DESCRIPTION>Sampling time for measurements of dynamical phenomena, lower limit.</DESCRIPTION></FIELD><FIELD ID="time_sampling_step_max" datatype="double" name="time_sampling_step_max" ucd="time.interval;stat.max" unit="s" utype="Epn.Time.Time_sampling_step_max"><DESCRIPTION>Sampling time for measurements of dynamical phenomena, upper limit</DESCRIPTION></FIELD><FIELD ID="time_exp_min" datatype="double" name="time_exp_min" ucd="time.duration;obs.exposure;stat.min" unit="s" utype="Epn.Time.Time_exp_min"><DESCRIPTION>Integration time of the measurement, lower limit.</DESCRIPTION></FIELD><FIELD ID="time_exp_max" datatype="double" name="time_exp_max" ucd="time.duration;obs.exposure;stat.max" unit="s" utype="Epn.Time.Time_exp_max"><DESCRIPTION>Integration time of the measurement, upper limit</DESCRIPTION></FIELD><FIELD ID="spectral_range_min" datatype="double" name="spectral_range_min" ucd="em.freq;stat.min" unit="Hz" utype="Epn.Spectral.Spectral_range_min"><DESCRIPTION>Spectral range (frequency), lower limit.</DESCRIPTION></FIELD><FIELD ID="spectral_range_max" datatype="double" name="spectral_range_max" ucd="em.freq;stat.max" unit="Hz" utype="Epn.Spectral.Spectral_range_max"><DESCRIPTION>Spectral range (frequency), upper limit</DESCRIPTION></FIELD><FIELD ID="spectral_sampling_step_min" datatype="double" name="spectral_sampling_step_min" ucd="em.freq.step;stat.min" unit="Hz" utype="Epn.Spectral.Spectral_sampling_step_min"><DESCRIPTION>spectral sampling step, lower limit.</DESCRIPTION></FIELD><FIELD ID="spectral_sampling_step_max" datatype="double" name="spectral_sampling_step_max" ucd="em.freq.step;stat.max" unit="Hz" utype="Epn.Spectral.Spectral_sampling_step_max"><DESCRIPTION>spectral sampling step, upper limit</DESCRIPTION></FIELD><FIELD ID="spectral_resolution_min" datatype="double" name="spectral_resolution_min" ucd="spect.resolution;stat.min" unit="Hz" utype="Epn.Spectral.Spectral_resolution_min"><DESCRIPTION>Sectral resolution, lower limit.</DESCRIPTION></FIELD><FIELD ID="spectral_resolution_max" datatype="double" name="spectral_resolution_max" ucd="spect.resolution;stat.max" unit="Hz" utype="Epn.Spectral.Spectral_resolution_max"><DESCRIPTION>Sectral resolution, upper limit</DESCRIPTION></FIELD><FIELD ID="c1min" datatype="double" name="c1min" ucd="pos.eq.ra;stat.min" unit="deg" utype="Epn.Spatial.Spatial_range.c1min"><DESCRIPTION>Right Ascension (ICRS), lower limit.</DESCRIPTION></FIELD><FIELD ID="c1max" datatype="double" name="c1max" ucd="pos.eq.ra;stat.max" unit="deg" utype="Epn.Spatial.Spatial_range.c1max"><DESCRIPTION>Right Ascension (ICRS), upper limit</DESCRIPTION></FIELD><FIELD ID="c2min" datatype="double" name="c2min" ucd="pos.eq.dec;stat.min" unit="deg" utype="Epn.Spatial.Spatial_range.c2min"><DESCRIPTION>Declination (ICRS), lower limit.</DESCRIPTION></FIELD><FIELD ID="c2max" datatype="double" name="c2max" ucd="pos.eq.dec;stat.max" unit="deg" utype="Epn.Spatial.Spatial_range.c2max"><DESCRIPTION>Declination (ICRS), upper limit</DESCRIPTION></FIELD><FIELD ID="c3min" datatype="double" name="c3min" ucd="phys.distance;stat.min" unit="m" utype="Epn.Spatial.Spatial_range.c3min"><DESCRIPTION>Distance from coordiate origin, lower limit.</DESCRIPTION></FIELD><FIELD ID="c3max" datatype="double" name="c3max" ucd="phys.distance;stat.max" unit="m" utype="Epn.Spatial.Spatial_range.c3max"><DESCRIPTION>Distance from coordiate origin, upper limit</DESCRIPTION></FIELD><FIELD ID="s_region" arraysize="*" datatype="char" name="s_region" ucd="phys.outline;obs.field" xtype="adql:REGION"><DESCRIPTION>ObsCore-like footprint, valid for celestial, spherical, or body-fixed frames.</DESCRIPTION></FIELD><FIELD ID="c1_resol_min" datatype="double" name="c1_resol_min" ucd="pos.resolution;stat.min" unit="deg" utype="Epn.Spatial.Spatial_resolution.c1_resol_min"><DESCRIPTION>Resolution in the first coordinate, lower limit.</DESCRIPTION></FIELD><FIELD ID="c1_resol_max" datatype="double" name="c1_resol_max" ucd="pos.resolution;stat.max" unit="deg" utype="Epn.Spatial.Spatial_resolution.c1_resol_max"><DESCRIPTION>Resolution in the first coordinate, upper limit</DESCRIPTION></FIELD><FIELD ID="c2_resol_min" datatype="double" name="c2_resol_min" ucd="pos.resolution;stat.min" unit="deg" utype="Epn.Spatial.Spatial_resolution.c2_resol_min"><DESCRIPTION>Resolution in the second coordinate, lower limit.</DESCRIPTION></FIELD><FIELD ID="c2_resol_max" datatype="double" name="c2_resol_max" ucd="pos.resolution;stat.max" unit="deg" utype="Epn.Spatial.Spatial_resolution.c2_resol_max"><DESCRIPTION>Resolution in the second coordinate, upper limit</DESCRIPTION></FIELD><FIELD ID="c3_resol_min" datatype="double" name="c3_resol_min" ucd="pos.resolution;stat.min" unit="m" utype="Epn.Spatial.Spatial_resolution.c3_resol_min"><DESCRIPTION>Resolution in the third coordinate, lower limit.</DESCRIPTION></FIELD><FIELD ID="c3_resol_max" datatype="double" name="c3_resol_max" ucd="pos.resolution;stat.max" unit="m" utype="Epn.Spatial.Spatial_resolution.c3_resol_max"><DESCRIPTION>Resolution in the third coordinate, upper limit</DESCRIPTION></FIELD><FIELD ID="spatial_frame_type" arraysize="*" datatype="char" name="spatial_frame_type" ucd="meta.code.class;pos.frame"><DESCRIPTION>Flavor of coordinate system, defines the nature of coordinates. From enumerated list</DESCRIPTION><VALUES><OPTION name="celestial" value="celestial"/><OPTION name="body" value="body"/><OPTION name="cartesian" value="cartesian"/><OPTION name="cylindrical" value="cylindrical"/><OPTION name="spherical" value="spherical"/><OPTION name="healpix" value="healpix"/></VALUES></FIELD><FIELD ID="incidence_min" datatype="double" name="incidence_min" ucd="pos.posAng;stat.min" unit="deg" utype="Epn.View_angle.Incidence_angle_min"><DESCRIPTION>Incidence angle (solar zenithal angle) during data acquisition, lower limit.</DESCRIPTION></FIELD><FIELD ID="incidence_max" datatype="double" name="incidence_max" ucd="pos.posAng;stat.max" unit="deg" utype="Epn.View_angle.Incidence_angle_max"><DESCRIPTION>Incidence angle (solar zenithal angle) during data acquisition, upper limit</DESCRIPTION></FIELD><FIELD ID="emergence_min" datatype="double" name="emergence_min" ucd="pos.posAng;stat.min" unit="deg" utype="Epn.View_angle.Emergence_angle_min"><DESCRIPTION>Emergence angle during data acquisition, lower limit.</DESCRIPTION></FIELD><FIELD ID="emergence_max" datatype="double" name="emergence_max" ucd="pos.posAng;stat.max" unit="deg" utype="Epn.View_angle.Emergence_angle_max"><DESCRIPTION>Emergence angle during data acquisition, upper limit</DESCRIPTION></FIELD><FIELD ID="phase_min" datatype="double" name="phase_min" ucd="pos.phaseAng;stat.min" unit="deg" utype="Epn.View_angle.Phase_angle_min"><DESCRIPTION>Phase angle during data acquisition, lower limit.</DESCRIPTION></FIELD><FIELD ID="phase_max" datatype="double" name="phase_max" ucd="pos.phaseAng;stat.max" unit="deg" utype="Epn.View_angle.Phase_angle_max"><DESCRIPTION>Phase angle during data acquisition, upper limit</DESCRIPTION></FIELD><FIELD ID="instrument_host_name" arraysize="*" datatype="char" name="instrument_host_name" ucd="meta.id;instr.obsty" utype="Provenance.ObsConfig.Facility.name"><DESCRIPTION>Standard name of the observatory or spacecraft.</DESCRIPTION></FIELD><FIELD ID="instrument_name" arraysize="*" datatype="char" name="instrument_name" ucd="meta.id;instr" utype="Provenance.ObsConfig.Instrument.name"><DESCRIPTION>Standard name of instrument</DESCRIPTION></FIELD><FIELD ID="measurement_type" arraysize="*" datatype="char" name="measurement_type" ucd="meta.ucd" utype="Epn.Measurement_type"><DESCRIPTION>UCD(s) defining the data, with multiple entries separated by hash (#) characters.</DESCRIPTION></FIELD><FIELD ID="processing_level" datatype="int" name="processing_level" ucd="meta.code;obs.calib"><DESCRIPTION>CODMAC calibration level; see the et_cal note http://dc.g-vo.org/tableinfo/titan.epn_core#note-et_cal for what values are defined here.</DESCRIPTION><VALUES null="-2147483648"></VALUES></FIELD><FIELD ID="creation_date" arraysize="*" datatype="char" name="creation_date" ucd="time.creation" xtype="timestamp"><DESCRIPTION>Date of first entry of this granule</DESCRIPTION><VALUES null=""></VALUES></FIELD><FIELD ID="modification_date" arraysize="*" datatype="char" name="modification_date" ucd="time.update" xtype="timestamp"><DESCRIPTION>Date of last modification (used to handle mirroring)</DESCRIPTION><VALUES null=""></VALUES></FIELD><FIELD ID="release_date" arraysize="*" datatype="char" name="release_date" ucd="time.release" xtype="timestamp"><DESCRIPTION>Start of public access period</DESCRIPTION><VALUES null=""></VALUES></FIELD><FIELD ID="service_title" arraysize="*" datatype="char" name="service_title" ucd="meta.title"><DESCRIPTION>Title of resource (an acronym really, will be used to handle multiservice results)</DESCRIPTION></FIELD><FIELD ID="access_url" arraysize="*" datatype="char" name="access_url" ucd="meta.ref.url;meta.file" utype="Obs.Access.Reference"><DESCRIPTION>URL of the data file, case sensitive. Can point to a script.</DESCRIPTION></FIELD><FIELD ID="access_format" arraysize="*" datatype="char" name="access_format" ucd="meta.code.mime" utype="Obs.Access.Format"><DESCRIPTION>File format type (RFC 6838 Media Type a.k.a MIME type)</DESCRIPTION></FIELD><FIELD ID="access_estsize" datatype="int" name="access_estsize" ucd="phys.size;meta.file" unit="kbyte" utype="Obs.Access.Size"><DESCRIPTION>Estimated file size in kbyte.</DESCRIPTION><VALUES null="-1"></VALUES></FIELD><FIELD ID="access_md5" arraysize="*" datatype="char" name="access_md5" ucd="meta.checksum;meta.file"><DESCRIPTION>MD5 Hash for the file</DESCRIPTION></FIELD><FIELD ID="time_scale" arraysize="*" datatype="char" name="time_scale" ucd="time.scale"><DESCRIPTION>Always UTC in data services (may be relaxed in computational services such as ephemeris) - from enumerated list</DESCRIPTION></FIELD><FIELD ID="publisher" arraysize="*" datatype="char" name="publisher" ucd="meta.ref"><DESCRIPTION>A short string identifying the entity running the data service used.</DESCRIPTION></FIELD><FIELD ID="bib_reference" arraysize="*" datatype="char" name="bib_reference" ucd="meta.bib"><DESCRIPTION>Bibcode preferred if available (does that include link?), doi, or other biblio id, URL</DESCRIPTION></FIELD><FIELD ID="target_region" arraysize="*" datatype="char" name="target_region" ucd="meta.id;class"><DESCRIPTION>Type of region of interest</DESCRIPTION></FIELD><FIELD ID="event_status" arraysize="*" datatype="char" name="event_status" ucd="meta.code.class"><DESCRIPTION>by default observation can be prediction, utility, test</DESCRIPTION></FIELD><FIELD ID="event_type" arraysize="*" datatype="char" name="event_type" ucd="meta.code.class"><DESCRIPTION>type of Event</DESCRIPTION></FIELD><FIELD ID="showers" arraysize="*" datatype="char" name="showers" ucd="meta.name"><DESCRIPTION>name of the meteor showers</DESCRIPTION></FIELD><FIELD ID="showercode" arraysize="*" datatype="char" name="showercode" ucd="meta.id"><DESCRIPTION>code of the meteor showers</DESCRIPTION></FIELD><FIELD ID="event_origin_target" arraysize="*" datatype="char" name="event_origin_target" ucd="meta.name"><DESCRIPTION>parent body of the showers</DESCRIPTION></FIELD><FIELD ID="date_of_max" arraysize="*" datatype="char" name="date_of_max" ucd="time.epoch"><DESCRIPTION>date of the maximum of the showers</DESCRIPTION></FIELD><FIELD ID="begin_trail" arraysize="*" datatype="char" name="begin_trail" ucd="time.epoch"><DESCRIPTION>ejection starting date of the considered trail</DESCRIPTION></FIELD><FIELD ID="end_trail" arraysize="*" datatype="char" name="end_trail" ucd="time.epoch"><DESCRIPTION>ejection ending date of the considered trail</DESCRIPTION></FIELD><FIELD ID="dist0" arraysize="*" datatype="char" name="dist0" ucd="pos.distance"><DESCRIPTION>distance in AU from the center of the trail and the planet</DESCRIPTION></FIELD><FIELD ID="solar_longitude_min" datatype="double" name="solar_longitude_min" ucd="pos.posang" unit="deg"><DESCRIPTION>Min Solar longitude Ls (location on orbit / season) of the maximum of the showers</DESCRIPTION></FIELD><FIELD ID="solar_longitude_max" datatype="double" name="solar_longitude_max" ucd="pos.posang" unit="deg"><DESCRIPTION>Max Solar longitude Ls (location on orbit / season) of the maximum of the showers</DESCRIPTION></FIELD><FIELD ID="showers_year" arraysize="*" datatype="char" name="showers_year" ucd="time.epoch"><DESCRIPTION>year of the showers</DESCRIPTION></FIELD><FIELD ID="vgeo" datatype="double" name="vgeo" ucd="pos.bodyrc.lat" unit="km/s"><DESCRIPTION>planeto-centric relative velocity of the meteoroids at the time of the shower, in km/s</DESCRIPTION></FIELD><FIELD ID="s_v" datatype="double" name="s_v" ucd="pos.bodyrc.lat;stat.error" unit="km/s"><DESCRIPTION>sigma of vgeo : dispersion of the planeto-centric velocity, in km/s</DESCRIPTION></FIELD><FIELD ID="zhr" datatype="double" name="zhr" ucd="meta.idœ" unit="h**-1"><DESCRIPTION>The Zenith Hourly Rate, level of the shower: number of meteors per hour observable in ideal conditions</DESCRIPTION></FIELD><FIELD ID="conf_id" arraysize="*" datatype="char" name="conf_id" ucd="meta.id"><DESCRIPTION>Confident index build according to Planetary and Space Science Volume 143, 1 September 2017, Pages 78-82</DESCRIPTION></FIELD><DATA><BINARY><STREAM encoding="base64">AAAAGU1BUl8xVjFfMjAxN18xODY0XzA6OnYxLjAAAAAHdm9ldmVudAAAABlNQVJfMVYxXzIwMTdf
+
+
+
+6 -- ancillary</DESCRIPTION>
+<FIELDref ref="processing_level"/> 
+</GROUP> 
+<FIELD ID="granule_uid" arraysize="*" datatype="char" name="granule_uid" ucd="meta.id"> 
+<DESCRIPTION>Internal table row index Unique ID in data service, also in v2. Can be alphanumeric.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="granule_gid" arraysize="*" datatype="char" name="granule_gid" ucd="meta.id"> 
+<DESCRIPTION>Common to granules of same type (e.g. same map projection, or geometry data products). Can be alphanumeric.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="obs_id" arraysize="*" datatype="char" name="obs_id" ucd="meta.id"> 
+<DESCRIPTION>Associates granules derived from the same data (e.g. various representations/processing levels). Can be alphanumeric, may be the ID of original observation.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="dataproduct_type" arraysize="*" datatype="char" name="dataproduct_type" ucd="meta.code.class" utype="Epn.dataProductType"> 
+<DESCRIPTION>The high-level organization of the data product, from enumerated list (e.g., 'im' for image, sp for spectrum)</DESCRIPTION> 
+<VALUES> 
+<OPTION name="im" value="im"/> 
+<OPTION name="ma" value="ma"/> 
+<OPTION name="sp" value="sp"/> 
+<OPTION name="ds" value="ds"/> 
+<OPTION name="sc" value="sc"/> 
+<OPTION name="pr" value="pr"/> 
+<OPTION name="vo" value="vo"/> 
+<OPTION name="mo" value="mo"/> 
+<OPTION name="cu" value="cu"/> 
+<OPTION name="ts" value="ts"/> 
+<OPTION name="ca" value="ca"/> 
+<OPTION name="ci" value="ci"/> 
+</VALUES> 
+</FIELD> 
+<FIELD ID="target_name" arraysize="*" datatype="char" name="target_name" ucd="meta.id;src" utype="Epn.TargetName"> 
+<DESCRIPTION>Standard IAU name of target (from a list related to target class), case sensitive</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="target_class" arraysize="*" datatype="char" name="target_class" ucd="meta.code.class;src" utype="Epn.TargetClass"> 
+<DESCRIPTION>Type of target, from enumerated list</DESCRIPTION> 
+<VALUES> 
+<OPTION name="asteroid" value="asteroid"/> 
+<OPTION name="dwarf_planet" value="dwarf_planet"/> 
+<OPTION name="planet" value="planet"/> 
+<OPTION name="satellite" value="satellite"/> 
+<OPTION name="comet" value="comet"/> 
+<OPTION name="exoplanet" value="exoplanet"/> 
+<OPTION name="interplanetary_medium" value="interplanetary_medium"/> 
+<OPTION name="ring" value="ring"/> 
+<OPTION name="sample" value="sample"/> 
+<OPTION name="sky" value="sky"/> 
+<OPTION name="spacecraft" value="spacecraft"/> 
+<OPTION name="spacejunk" value="spacejunk"/> 
+<OPTION name="star" value="star"/> 
+</VALUES> 
+</FIELD> 
+<FIELD ID="time_min" datatype="double" name="time_min" ucd="time.start" unit="d"> 
+<DESCRIPTION>Acquisition start time (in JD)</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="time_max" datatype="double" name="time_max" ucd="time.end" unit="d"> 
+<DESCRIPTION>Acquisition stop time (in JD)</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="time_sampling_step_min" datatype="double" name="time_sampling_step_min" ucd="time.interval;stat.min" unit="s" utype="Epn.Time.Time_sampling_step_min"> 
+<DESCRIPTION>Sampling time for measurements of dynamical phenomena, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="time_sampling_step_max" datatype="double" name="time_sampling_step_max" ucd="time.interval;stat.max" unit="s" utype="Epn.Time.Time_sampling_step_max"> 
+<DESCRIPTION>Sampling time for measurements of dynamical phenomena, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="time_exp_min" datatype="double" name="time_exp_min" ucd="time.duration;obs.exposure;stat.min" unit="s" utype="Epn.Time.Time_exp_min"> 
+<DESCRIPTION>Integration time of the measurement, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="time_exp_max" datatype="double" name="time_exp_max" ucd="time.duration;obs.exposure;stat.max" unit="s" utype="Epn.Time.Time_exp_max"> 
+<DESCRIPTION>Integration time of the measurement, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="spectral_range_min" datatype="double" name="spectral_range_min" ucd="em.freq;stat.min" unit="Hz" utype="Epn.Spectral.Spectral_range_min"> 
+<DESCRIPTION>Spectral range (frequency), lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="spectral_range_max" datatype="double" name="spectral_range_max" ucd="em.freq;stat.max" unit="Hz" utype="Epn.Spectral.Spectral_range_max"> 
+<DESCRIPTION>Spectral range (frequency), upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="spectral_sampling_step_min" datatype="double" name="spectral_sampling_step_min" ucd="em.freq.step;stat.min" unit="Hz" utype="Epn.Spectral.Spectral_sampling_step_min"> 
+<DESCRIPTION>spectral sampling step, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="spectral_sampling_step_max" datatype="double" name="spectral_sampling_step_max" ucd="em.freq.step;stat.max" unit="Hz" utype="Epn.Spectral.Spectral_sampling_step_max"> 
+<DESCRIPTION>spectral sampling step, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="spectral_resolution_min" datatype="double" name="spectral_resolution_min" ucd="spect.resolution;stat.min" unit="Hz" utype="Epn.Spectral.Spectral_resolution_min"> 
+<DESCRIPTION>Sectral resolution, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="spectral_resolution_max" datatype="double" name="spectral_resolution_max" ucd="spect.resolution;stat.max" unit="Hz" utype="Epn.Spectral.Spectral_resolution_max"> 
+<DESCRIPTION>Sectral resolution, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c1min" datatype="double" name="c1min" ucd="pos.eq.ra;stat.min" unit="deg" utype="Epn.Spatial.Spatial_range.c1min"> 
+<DESCRIPTION>Right Ascension (ICRS), lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c1max" datatype="double" name="c1max" ucd="pos.eq.ra;stat.max" unit="deg" utype="Epn.Spatial.Spatial_range.c1max"> 
+<DESCRIPTION>Right Ascension (ICRS), upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c2min" datatype="double" name="c2min" ucd="pos.eq.dec;stat.min" unit="deg" utype="Epn.Spatial.Spatial_range.c2min"> 
+<DESCRIPTION>Declination (ICRS), lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c2max" datatype="double" name="c2max" ucd="pos.eq.dec;stat.max" unit="deg" utype="Epn.Spatial.Spatial_range.c2max"> 
+<DESCRIPTION>Declination (ICRS), upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c3min" datatype="double" name="c3min" ucd="phys.distance;stat.min" unit="m" utype="Epn.Spatial.Spatial_range.c3min"> 
+<DESCRIPTION>Distance from coordiate origin, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c3max" datatype="double" name="c3max" ucd="phys.distance;stat.max" unit="m" utype="Epn.Spatial.Spatial_range.c3max"> 
+<DESCRIPTION>Distance from coordiate origin, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="s_region" arraysize="*" datatype="char" name="s_region" ucd="phys.outline;obs.field" xtype="adql:REGION"> 
+<DESCRIPTION>ObsCore-like footprint, valid for celestial, spherical, or body-fixed frames.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c1_resol_min" datatype="double" name="c1_resol_min" ucd="pos.resolution;stat.min" unit="deg" utype="Epn.Spatial.Spatial_resolution.c1_resol_min"> 
+<DESCRIPTION>Resolution in the first coordinate, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c1_resol_max" datatype="double" name="c1_resol_max" ucd="pos.resolution;stat.max" unit="deg" utype="Epn.Spatial.Spatial_resolution.c1_resol_max"> 
+<DESCRIPTION>Resolution in the first coordinate, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c2_resol_min" datatype="double" name="c2_resol_min" ucd="pos.resolution;stat.min" unit="deg" utype="Epn.Spatial.Spatial_resolution.c2_resol_min"> 
+<DESCRIPTION>Resolution in the second coordinate, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c2_resol_max" datatype="double" name="c2_resol_max" ucd="pos.resolution;stat.max" unit="deg" utype="Epn.Spatial.Spatial_resolution.c2_resol_max"> 
+<DESCRIPTION>Resolution in the second coordinate, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c3_resol_min" datatype="double" name="c3_resol_min" ucd="pos.resolution;stat.min" unit="m" utype="Epn.Spatial.Spatial_resolution.c3_resol_min"> 
+<DESCRIPTION>Resolution in the third coordinate, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="c3_resol_max" datatype="double" name="c3_resol_max" ucd="pos.resolution;stat.max" unit="m" utype="Epn.Spatial.Spatial_resolution.c3_resol_max"> 
+<DESCRIPTION>Resolution in the third coordinate, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="spatial_frame_type" arraysize="*" datatype="char" name="spatial_frame_type" ucd="meta.code.class;pos.frame"> 
+<DESCRIPTION>Flavor of coordinate system, defines the nature of coordinates. From enumerated list</DESCRIPTION> 
+<VALUES> 
+<OPTION name="celestial" value="celestial"/> 
+<OPTION name="body" value="body"/> 
+<OPTION name="cartesian" value="cartesian"/> 
+<OPTION name="cylindrical" value="cylindrical"/> 
+<OPTION name="spherical" value="spherical"/> 
+<OPTION name="healpix" value="healpix"/> 
+</VALUES> 
+</FIELD> 
+<FIELD ID="incidence_min" datatype="double" name="incidence_min" ucd="pos.posAng;stat.min" unit="deg" utype="Epn.View_angle.Incidence_angle_min"> 
+<DESCRIPTION>Incidence angle (solar zenithal angle) during data acquisition, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="incidence_max" datatype="double" name="incidence_max" ucd="pos.posAng;stat.max" unit="deg" utype="Epn.View_angle.Incidence_angle_max"> 
+<DESCRIPTION>Incidence angle (solar zenithal angle) during data acquisition, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="emergence_min" datatype="double" name="emergence_min" ucd="pos.posAng;stat.min" unit="deg" utype="Epn.View_angle.Emergence_angle_min"> 
+<DESCRIPTION>Emergence angle during data acquisition, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="emergence_max" datatype="double" name="emergence_max" ucd="pos.posAng;stat.max" unit="deg" utype="Epn.View_angle.Emergence_angle_max"> 
+<DESCRIPTION>Emergence angle during data acquisition, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="phase_min" datatype="double" name="phase_min" ucd="pos.phaseAng;stat.min" unit="deg" utype="Epn.View_angle.Phase_angle_min"> 
+<DESCRIPTION>Phase angle during data acquisition, lower limit.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="phase_max" datatype="double" name="phase_max" ucd="pos.phaseAng;stat.max" unit="deg" utype="Epn.View_angle.Phase_angle_max"> 
+<DESCRIPTION>Phase angle during data acquisition, upper limit</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="instrument_host_name" arraysize="*" datatype="char" name="instrument_host_name" ucd="meta.id;instr.obsty" utype="Provenance.ObsConfig.Facility.name"> 
+<DESCRIPTION>Standard name of the observatory or spacecraft.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="instrument_name" arraysize="*" datatype="char" name="instrument_name" ucd="meta.id;instr" utype="Provenance.ObsConfig.Instrument.name"> 
+<DESCRIPTION>Standard name of instrument</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="measurement_type" arraysize="*" datatype="char" name="measurement_type" ucd="meta.ucd" utype="Epn.Measurement_type"> 
+<DESCRIPTION>UCD(s) defining the data, with multiple entries separated by hash (#) characters.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="processing_level" datatype="int" name="processing_level" ucd="meta.code;obs.calib"> 
+<DESCRIPTION>CODMAC calibration level; see the et_cal note http://dc.g-vo.org/tableinfo/titan.epn_core#note-et_cal for what values are defined here.</DESCRIPTION> 
+<VALUES null="-2147483648"> 
+</VALUES> 
+</FIELD> 
+<FIELD ID="creation_date" arraysize="*" datatype="char" name="creation_date" ucd="time.creation" xtype="timestamp"> 
+<DESCRIPTION>Date of first entry of this granule</DESCRIPTION> 
+<VALUES null=""> 
+</VALUES> 
+</FIELD> 
+<FIELD ID="modification_date" arraysize="*" datatype="char" name="modification_date" ucd="time.update" xtype="timestamp"> 
+<DESCRIPTION>Date of last modification (used to handle mirroring)</DESCRIPTION> 
+<VALUES null=""> 
+</VALUES> 
+</FIELD> 
+<FIELD ID="release_date" arraysize="*" datatype="char" name="release_date" ucd="time.release" xtype="timestamp"> 
+<DESCRIPTION>Start of public access period</DESCRIPTION> 
+<VALUES null=""> 
+</VALUES> 
+</FIELD> 
+<FIELD ID="service_title" arraysize="*" datatype="char" name="service_title" ucd="meta.title"> 
+<DESCRIPTION>Title of resource (an acronym really, will be used to handle multiservice results)</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="access_url" arraysize="*" datatype="char" name="access_url" ucd="meta.ref.url;meta.file" utype="Obs.Access.Reference"> 
+<DESCRIPTION>URL of the data file, case sensitive. Can point to a script.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="access_format" arraysize="*" datatype="char" name="access_format" ucd="meta.code.mime" utype="Obs.Access.Format"> 
+<DESCRIPTION>File format type (RFC 6838 Media Type a.k.a MIME type)</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="access_estsize" datatype="int" name="access_estsize" ucd="phys.size;meta.file" unit="kbyte" utype="Obs.Access.Size"> 
+<DESCRIPTION>Estimated file size in kbyte.</DESCRIPTION> 
+<VALUES null="-1"> 
+</VALUES> 
+</FIELD> 
+<FIELD ID="access_md5" arraysize="*" datatype="char" name="access_md5" ucd="meta.checksum;meta.file"> 
+<DESCRIPTION>MD5 Hash for the file</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="time_scale" arraysize="*" datatype="char" name="time_scale" ucd="time.scale"> 
+<DESCRIPTION>Always UTC in data services (may be relaxed in computational services such as ephemeris) - from enumerated list</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="publisher" arraysize="*" datatype="char" name="publisher" ucd="meta.ref"> 
+<DESCRIPTION>A short string identifying the entity running the data service used.</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="bib_reference" arraysize="*" datatype="char" name="bib_reference" ucd="meta.bib"> 
+<DESCRIPTION>Bibcode preferred if available (does that include link?), doi, or other biblio id, URL</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="target_region" arraysize="*" datatype="char" name="target_region" ucd="meta.id;class"> 
+<DESCRIPTION>Type of region of interest</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="event_status" arraysize="*" datatype="char" name="event_status" ucd="meta.code.class"> 
+<DESCRIPTION>by default observation can be prediction, utility, test</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="event_type" arraysize="*" datatype="char" name="event_type" ucd="meta.code.class"> 
+<DESCRIPTION>type of Event</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="showers" arraysize="*" datatype="char" name="showers" ucd="meta.name"> 
+<DESCRIPTION>name of the meteor showers</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="showercode" arraysize="*" datatype="char" name="showercode" ucd="meta.id"> 
+<DESCRIPTION>code of the meteor showers</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="event_origin_target" arraysize="*" datatype="char" name="event_origin_target" ucd="meta.name"> 
+<DESCRIPTION>parent body of the showers</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="date_of_max" arraysize="*" datatype="char" name="date_of_max" ucd="time.epoch"> 
+<DESCRIPTION>date of the maximum of the showers</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="begin_trail" arraysize="*" datatype="char" name="begin_trail" ucd="time.epoch"> 
+<DESCRIPTION>ejection starting date of the considered trail</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="end_trail" arraysize="*" datatype="char" name="end_trail" ucd="time.epoch"> 
+<DESCRIPTION>ejection ending date of the considered trail</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="dist0" arraysize="*" datatype="char" name="dist0" ucd="pos.distance"> 
+<DESCRIPTION>distance in AU from the center of the trail and the planet</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="solar_longitude_min" datatype="double" name="solar_longitude_min" ucd="pos.posang" unit="deg"> 
+<DESCRIPTION>Min Solar longitude Ls (location on orbit / season) of the maximum of the showers</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="solar_longitude_max" datatype="double" name="solar_longitude_max" ucd="pos.posang" unit="deg"> 
+<DESCRIPTION>Max Solar longitude Ls (location on orbit / season) of the maximum of the showers</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="showers_year" arraysize="*" datatype="char" name="showers_year" ucd="time.epoch"> 
+<DESCRIPTION>year of the showers</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="vgeo" datatype="double" name="vgeo" ucd="pos.bodyrc.lat" unit="km/s"> 
+<DESCRIPTION>planeto-centric relative velocity of the meteoroids at the time of the shower, in km/s</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="s_v" datatype="double" name="s_v" ucd="pos.bodyrc.lat;stat.error" unit="km/s"> 
+<DESCRIPTION>sigma of vgeo : dispersion of the planeto-centric velocity, in km/s</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="zhr" datatype="double" name="zhr" ucd="meta.idœ" unit="h**-1"> 
+<DESCRIPTION>The Zenith Hourly Rate, level of the shower: number of meteors per hour observable in ideal conditions</DESCRIPTION> 
+</FIELD> 
+<FIELD ID="conf_id" arraysize="*" datatype="char" name="conf_id" ucd="meta.id"> 
+<DESCRIPTION>Confident index build according to Planetary and Space Science Volume 143, 1 September 2017, Pages 78-82</DESCRIPTION> 
+</FIELD> 
+<DATA> 
+<BINARY> 
+<STREAM encoding="base64">AAAAGU1BUl8xVjFfMjAxN18xODY0XzA6OnYxLjAAAAAHdm9ldmVudAAAABlNQVJfMVYxXzIwMTdf
